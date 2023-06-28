@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="LOGIN.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+<body>
+<!--ANIMACIÓN BODY-->  
+<div class="animateme">
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+<!--END ANIMACIÓN BODY-->  
+
+      <div id="slideBox">
+        <div class="topLayer">
+        <!--FORMULARIO CREAR CUENTA-->
+          <div class="left">
+            <div class="content">
+              <a href="#"><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i></a>
+              <img src="images/logo (1).png" class="imagen-login" alt="">
+              <div class="muestra-titulo">
+                <h2>Sign Up</h2>
+              </div>
+              <form id="form-singup" method="post" class="form form-singup" onsubmit="return false;">
+                <div class="form-field">
+                  <label class="email" for="singup-email"><span class="hidden">Gmail</span></label>
+                  <input id="singup-email" type="text" class="form-input" placeholder="Gmail" required>
+                </div>
+                <div class="form-field">
+                  <label class="user" for="singup-username"><span class="hidden">Username</span></label>
+                  <input id="singup-username" type="text" class="form-input" placeholder="Username" required>
+                </div>
+                <div class="form-field">
+                  <label class="lock" for="singup-password"><span class="hidden">Password</span></label>
+                  <input id="password" type="password" class="form-input" placeholder="Password (caracteres 4 - 12)" required>
+                </div>
+                <div class="form-element form-submit">
+                  <button id="signUp" class="signup" type="submit" name="signup">Sign up</button>
+                  <button id="goLeft" class="signup off">Log In</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!--END FORMULARIO CREAR CUENTA-->
+          
+          <!--FORMULARIO INICIAR SESIÓN-->
+          <div class="right">
+            <div class="content">
+              <a href="#"><i class="fa-sharp-login fa-solid fa-arrow-right-from-bracket"></i></a>
+              <img src="images/logo (1).png" class="imagen-login" alt="">
+              <div class="muestra-titulo">
+                <h2>Login</h2>
+              </div>
+              <form id="form-login" method="post" class="form form-login" onsubmit="return false;">
+                <div class="form-field">
+                  <label class="email" for="login-username"><span class="hidden">gmail</span></label>
+                  <input id="login-username" type="text" class="form-input" placeholder="Gmail" required>
+                </div>
+                <div class="form-field">
+                  <label class="lock" for="login-password"><span class="hidden">Password</span></label>
+                  <input id="password" type="password" class="form-input" placeholder="Password" required>
+                </div>
+
+                <div class="form-element form-submit">
+                  <button id="logIn" class="login" type="submit" name="login">Log In</button>
+                  <button id="goRight" class="login off" name="signup">Sign Up</button>
+                </div>
+
+                <div class="flex justify-between items-center mt-1">
+                  <hr class="w-full border-gray-300"> <h3 class="with">Login With</h3>
+                </div>
+                <div class="rounded-social-buttons"><!-- Iconos redes sociales -->
+                  <a class="social-button facebook" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a class="social-button google" href="#" target="_blank"><i class="fab fa-google"></i></a>
+                </div><!-- Termina Iconos redes sociales -->
+
+              </form>
+            </div>
+          </div>
+          <!--END FORMULARIO INICIAR SESIÓN-->
+        </div>
+      </div>
+
+    
+
+      
+    <script src="js/script-login.js"></script>
+</body>
+</html>
